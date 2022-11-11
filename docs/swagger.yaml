@@ -1,0 +1,49 @@
+swagger: "2.0"
+info:
+  description: "Banno Interview Project"
+  version: "0.0.1"
+  title: "Banno Interview Project"
+  contact:
+    email: "nealiof1000@gmail.com"
+host: "localhost:8081"
+basePath: "/"
+tags:
+  - name: "weather"
+    description: "Weather API"
+schemes:
+  - "http"
+paths:
+  /weather:
+    get:
+      tags:
+        - "weather"
+      summary: "Get short forecast and simple temperature for a lat/lon pair"
+      description: "Get short forecast and simple temperature for a lat/lon pair"
+      operationId: "getWeatherForLatLon"
+      parameters:
+        - in: query
+          name: lat
+          schema:
+            type: "string"
+          description: "latitude to check weather on"
+        - in: query
+          name: lon
+          schema:
+            type: "string"
+          description: "longitude to check weather on"
+      produces:
+        - "application/json"
+      responses:
+        "500":
+          description: "internal server error while trying to get weather"
+          schema:
+            type: "object"
+        "200":
+          description: "successfully got weather for lat/lon pair"
+          schema:
+            type: "object"
+            properties:
+              shortForecast:
+                type: "string"
+              temperature:
+                type: "string"
