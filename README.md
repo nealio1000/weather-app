@@ -28,5 +28,7 @@ sbt run
  - publish json schema defining standard result format contract
  - mock client for testing api functions
  - clean up error handling
+ - use generators for domain objects
+ - test encoding/decoding domain jobs in circe
 
 ## Troubleshooting
