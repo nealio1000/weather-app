@@ -6,12 +6,16 @@ import org.http4s.blaze.server.BlazeServerBuilder
 import org.http4s.server.Router
 import org.http4s.server.middleware.Logger
 import org.neal.apis._
+import org.neal.functions.WeatherApiFunctions
 
 object WeatherServer extends IOApp with LazyLogging {
   final val httpApp = {
     Router[IO](
       "/health" -> HealthApi.service,
-      "/weather" -> Logger.httpRoutes(logHeaders = true, logBody = true)(WeatherApi.service)
+      "/weather" -> Logger.httpRoutes(
+        logHeaders = true,
+        logBody = true
+      )(new WeatherApi(new WeatherApiFunctions).service)
     ).orNotFound
   }
 
