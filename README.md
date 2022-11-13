@@ -19,11 +19,14 @@ sbt run
    ```
 
 ## Follow-on Work
+ - Dockerize Server
+ - Use docker compose to set up integration tests
  - CI/CD
  - Deploy to Kubernetes
- - Metrics and Monitoring 
- - publish json schema
+ - Metrics and Monitoring
  - standard result format
+ - publish json schema defining standard result format contract
  - mock client for testing api functions
+ - clean up error handling
 
 ## Troubleshooting

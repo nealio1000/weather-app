@@ -8,7 +8,7 @@ import org.scalatestplus.mockito.MockitoSugar
 import org.neal.models.{Forecast, GridCoordinates}
 
 
-// TODO make client injectable in WeatherApiFunctions and use a mock client here
+// TODO make client injectable in WeatherApiFunctions and use a mock client here so we aren't doing "integration" tests
 class WeatherApiFunctionsTest extends AnyFlatSpecLike with Matchers with LazyLogging with MockitoSugar {
 
   private val api = new WeatherApiFunctions()
