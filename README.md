@@ -8,6 +8,13 @@ Interview exercise for Banno (Jack Henry) designed to provide an endpoint for ge
 sbt run
 ```
 
+## Example Queries
+```
+http://localhost:8081/weather?lat=39.7456&lon=-97.0892
+http://localhost:8081/weather?lat=40.2268&lon=-108.9805
+http://localhost:8081/weather?lat=27.8168&lon=-81.3828
+```
+
 ## Testing
 
 ### Prerequisites
