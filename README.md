@@ -36,6 +36,6 @@ http://localhost:8081/weather?lat=27.8168&lon=-81.3828
  - mock client for testing api functions
  - clean up error handling
  - use generators for domain objects
- - test encoding/decoding domain jobs in circe
+ - test encoding/decoding domain objects in circe
 
 ## Troubleshooting
