@@ -1,8 +1,8 @@
 swagger: "2.0"
 info:
-  description: "Banno Interview Project"
+  description: "Weather App"
   version: "0.0.1"
-  title: "Banno Interview Project"
+  title: "Weather App"
   contact:
     email: "nealiof1000@gmail.com"
 host: "localhost:8081"

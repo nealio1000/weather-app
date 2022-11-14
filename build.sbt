@@ -40,7 +40,7 @@ lazy val deps = Seq(
   "org.typelevel" %% "discipline-scalatest" % disciplineScalatestVersion % Test
 )
 
-lazy val interview = (project in file("."))
+lazy val weatherApp = (project in file("."))
   .configs(IntegrationTest)
   .settings(
     Defaults.itSettings,

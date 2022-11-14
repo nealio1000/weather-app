@@ -1,4 +1,3 @@
-<!-- https://www.playframework.com/documentation/latest/SettingsLogger -->
 <configuration>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LogstashEncoder">
@@ -9,7 +8,7 @@
                 <pattern>
                     {
                     "level": "%level",
-                    "service": "banno-interview"",
+                    "service": "weather-app",
                     "traceId": "%X{X-B3-TraceId:-}",
                     "spanId": "%X{X-B3-SpanId:-}",
                     "thread": "%thread",

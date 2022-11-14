@@ -1,7 +1,7 @@
-# Banno Interview Exercise
+# Weather app
 
 ## Description
-Interview exercise for Banno (Jack Henry) designed to provide an endpoint for getting a forecast on a lat/lon pair
+Weather app designed to provide an endpoint for getting a forecast on a lat/lon pair
 
 ## Usage
 ```bash
